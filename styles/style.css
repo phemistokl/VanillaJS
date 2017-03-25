@@ -1,0 +1,11 @@
+.table-template {
+  display: none;
+}
+span {
+  font-size: 12px;
+  color: red;
+  padding-left: 5px;
+}
+tr > th {
+  cursor: pointer;
+}
