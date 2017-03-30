@@ -21,17 +21,21 @@
     <div class="container">
       <h1>Список поездов</h1>
       <div class="table-responsive">
-        <table class="table table-bordered table-striped">
+        <table id="table" class="table table-bordered table-striped">
+          <thead>
           <tr>
-            <th>Номер поезда</th>
-            <th>Название поезда</th>
-            <th>Дата и время отправления</th>
-            <th>Станция отправления поезда</th>
-            <th>Станция прибытия поезда</th>
-            <th>Дата и время прибытия</th>
-            <th>Время в пути</th>
-            <th>Перевозчик</th>
+            <th data-type="number" class="header">Номер поезда</th>
+            <th data-type="string" class="header">Название поезда</th>
+            <th data-type="number" class="header">Дата и время отправления</th>
+            <th data-type="string" class="header">Станция отправления поезда</th>
+            <th data-type="string" class="header">Станция прибытия поезда</th>
+            <th data-type="number" class="header">Дата и время прибытия</th>
+            <th data-type="number" class="header">Время в пути</th>
+            <th data-type="string" class="header">Перевозчик</th>
           </tr>
+          </thead>
+          <tbody>
+          </tbody>
         </table>
         <!--Template-->
         <table class="table table-template">

@@ -28,9 +28,11 @@
 
      Table.prototype.update = function() {
         var tableHtml = this.generateAll();
-        tableDomElem = document.querySelectorAll('tbody')[0];
+        tableDomElem = document.querySelectorAll('thead')[0];
 
-        tableDomElem.appendChild(tableHtml);
+        var tableBody = document.querySelectorAll('tbody')[0];
+
+        tableBody.appendChild(tableHtml);
      };
 
      Table.prototype.generateAll = function() {
